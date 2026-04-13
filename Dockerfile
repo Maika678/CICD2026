@@ -33,7 +33,7 @@ COPY app/package*.json ./app/
 # Pourquoi ne pas installer les devDependencies ?
 # → En production, elles ne servent à rien (tests, outils, etc.)
 # → L’image est plus légère et plus sécuritaire.
-RUN npm install --omit=dev --prefix app
+RUN npm install --omit=qa --prefix app
 
 
 # ------------------------------------------------------------
